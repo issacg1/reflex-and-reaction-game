@@ -1,5 +1,5 @@
 # reflex-and-reaction-game
-[can't stop won't stop](https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.mp4)](https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.mp4)
+[can't stop won't stop](https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.mp4)
 
 
 # Game Description: 
