@@ -7,6 +7,6 @@ In this game, a user can test out his or her response time as well as reaction t
 
 # Wireframes:
 ### Opening Screen
-[Opening screen](http://i.imgur.com/iEmltSb.png)
+![Opening screen](http://i.imgur.com/iEmltSb.png)
 
 
