@@ -1,0 +1,127 @@
+/**Styles for index **/
+.centerContent{
+  text-align: center;
+}
+
+.header{
+  margin: 30px auto;
+  border: 2px solid rgb(234, 21, 21);
+  /**potentially add animated color background**/
+}
+
+/**Styles for level one page **/
+.headerContainer{
+  height: 15vh;
+  width: 99vw;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  /**background-color: rgb(186, 186, 186); **/
+
+}
+
+.score{
+  float: left;
+  padding: 5px 100px 5px 5px;
+  margin: 0 350px 0 0;
+  border: 2px solid rgb(234, 21, 21);
+  border-radius: 5px;
+  font-size: 200%;
+}
+
+.startButton{
+  float: left;
+  padding: 5px;
+  margin: 0 350px 0 0;
+}
+
+.timeLeft{
+  float: right;
+  padding: 5px 100px 5px 5px;
+  border: 2px solid rgb(234, 21, 21);
+  border-radius: 5px;
+  font-size: 200%;
+}
+
+.instruction1Contain{
+  height: 20vh;
+  width: 100vw;
+}
+
+.instructionCopy{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 450%;
+  color: green;
+  font-weight: bold;
+}
+
+.piecesContainer{
+  height: 65vh;
+  width: 80vw;
+  position: relative;
+  padding-left: 150px;
+  margin-top: 30px;
+}
+
+.pieceRow1{
+  height: 27vh;
+  width: 15vw;
+  float: left;
+  margin: 0px 40px 40px 10px;
+  border: 2px solid black;
+
+}
+
+.pieceRow2{
+  height: 27vh;
+  width: 15vw;
+  float: left;
+  margin: 0px 40px 0px 10px;
+  border: 2px solid black;
+
+}
+
+.color1{
+  background-color: rgb(252, 0, 117);
+  border-radius: 100px;
+}
+
+.color2{
+  background-color: yellow;
+  border-radius: 100px 0px 0px 0px;
+}
+
+.color3{
+  background-color: blue;
+  border-radius: 100px;
+
+}
+
+.color3{
+  background-color: pink;
+}
+
+.color4{
+  background-color: red;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.color5{
+  background-color: rgb(252, 0, 117);
+}
+
+.color6{
+  background-color: rgb(252, 0, 117);
+  border-radius: 100px 0px 100px 0px;
+}
+
+.color7{
+  background-color: rgb(252, 0, 117);
+  border-radius: 100px;
+}
+
+.color8{
+  background-color: rgb(252, 0, 117);
+}
