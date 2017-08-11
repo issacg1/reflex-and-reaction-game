@@ -90,31 +90,25 @@
 
 .color2{
   background-color: yellow;
-  border-radius: 100px 0px 0px 0px;
+  border-radius: 100px;
 }
 
 .color3{
   background-color: blue;
-  border-radius: 100px;
+  border-radius: 0px;
 
-}
-
-.color3{
-  background-color: pink;
 }
 
 .color4{
   background-color: red;
-  border-radius: 100px 100px 0px 0px;
 }
 
 .color5{
-  background-color: rgb(252, 0, 117);
+  background-color: green;
 }
 
 .color6{
   background-color: rgb(252, 0, 117);
-  border-radius: 100px 0px 100px 0px;
 }
 
 .color7{
