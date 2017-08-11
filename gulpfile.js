@@ -58,7 +58,7 @@ gulp.task('serve', function () {
 
     browserSync({
         browser: browserPref,
-        notify: true,
+        notify: false,
         port: 9000,
         server: './'
     });
