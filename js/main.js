@@ -6,11 +6,11 @@ let starterCountDown = 3;
 let color = ["red", "blue", "green", "pink", "yellow", "brown", "blue", "orange"];
 let pieces = ["piece1", "piece2", "piece3", "piece4", "piece5", "piece6", "piece7", "piece8"];
 let shape = ["100px", "0px", "0px", "100px", "0px", "100px", "0px", "100px"];
-let number = 0;
-let random = [];
+let randomIndex = 0;
+let arrayOfRandomNumbers = [];
 
 $(document).ready(function(){
-    console.log("up and running!")
+    console.log("up and running!");
 
     //Constructer function to create the player
     function User(name, length){
@@ -22,6 +22,7 @@ $(document).ready(function(){
     $("#startButton").click(function() {
         let name = $("#userName").val();
         let length = $("input[name='timeOption']:checked").val();
+
         console.log(name);
         console.log(length);
         if (name.length > 1 && length >= 30) {
@@ -65,10 +66,11 @@ $(document).ready(function(){
     });
 
     //random number generater
-    function getRandomInt() {
+    function setRandomInt() {
         min = Math.ceil(0);
         max = Math.floor(9);
-        number = Math.floor(Math.random() * (max - min)) + min;
+
+        randomIndex = Math.floor(Math.random() * (max - min)) + min;
     }
 
     //creates the click function for each div
@@ -82,46 +84,55 @@ $(document).ready(function(){
     //gives each div a random color
     function randomColor(){
         $(".shape").each(function(){
-            getRandomInt();
-            if(random.indexOf(number) === -1){
-                random.push(number);
-                $(this).attr('background-color', color[number]);
-            }
-            else{
-                if(random.length !== 8){
+            setRandomInt();
+
+            /**
+             * If randomIndex is not an index found in the array of random numbers,
+             * push the new random number onto the array of random numbers.
+             */
+            if (arrayOfRandomNumbers.indexOf(randomIndex) === -1) {
+                arrayOfRandomNumbers.push(randomIndex);
+                $(this).attr('background-color', color[randomIndex]);
+            } else{
+
+                if (arrayOfRandomNumbers.length < color.length) {
                     randomColor();
+
                     return;
                 }
             }
-        })
-        random = [];
+        });
+
+        arrayOfRandomNumbers = [];
     }
 
     //gives each div a random shape
     function randomShape(){
         $(".shape").each(function(shape){
-            getRandomInt();
-            if(random.indexOf(number) === -1){
-                random.push(number);
-                $(this).attr('border-radius', shape[number]);
+            setRandomInt();
+            if(arrayOfRandomNumbers.indexOf(randomIndex) === -1){
+                arrayOfRandomNumbers.push(randomIndex);
+                $(this).attr('border-radius', shape[randomIndex]);
             }
             else{
-                if(random.length !== 8){
+                if(arrayOfRandomNumbers.length !== 8){
                     randomShape();
+
                     return;
                 }
             }
-        })
-        number = [];
-    }
+        });
 
+        arrayOfRandomNumbers = [];
+    }
 
     //function to store in the local storage
     var put = function (key, value) {
         if (window.localStorage) {
             window.localStorage[key] = value;
         }
-    }
+    };
+
     //function to retrieve stored keys
     var get = function (key) {
         return window.localStorage ? window.localStorage[key] : null;
