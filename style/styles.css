@@ -3,21 +3,68 @@
   text-align: center;
 }
 
+.backgroundColor{
+  background-color: rgb(74,189,172);
+}
 .header{
-  margin: 30px auto;
-  border: 2px solid rgb(234, 21, 21);
-  /**potentially add animated color background**/
+  height: 10vh;
+  width: 99vw;
+  margin: 40px, auto, 20px, auto;
+  }
+
+.instructions{
+  height: 15vh;
+  width: 60vw;
+  text-align: center;
+  margin-left: 250px;
+}
+
+#header > h1{
+  font-size: 550%;
+}
+
+.copy{
+  font-size: 190%;
+}
+
+.formContain{
+  height: 10vh;
+  width: 99vw;
+  margin-top: 270px;
+}
+
+input[type='radio'] {
+  transform: scale(1.2);
+}
+
+.radioButton{
+  font-size: 40px;
+}
+
+.userName{
+  height: 30px;
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+  border:2px solid red;
+}
+
+.button1{
+  margin-top: 10px;
+}
+
+.startButton1{
+  height: 40px;
+  border-radius: 5px;
 }
 
 /**Styles for level one page **/
 .headerContainer{
-  height: 15vh;
+  height: 7vh;
   width: 99vw;
   position: relative;
   margin: 0px;
   padding: 0px;
-  /**background-color: rgb(186, 186, 186); **/
-
 }
 
 .score{
@@ -29,10 +76,12 @@
   font-size: 200%;
 }
 
-.startButton{
-  float: left;
-  padding: 5px;
-  margin: 0 350px 0 0;
+.startButton2{
+  margin-left: 70px;
+}
+
+.startButton3{
+  margin-left: 600px;
 }
 
 .timeLeft{
@@ -41,6 +90,11 @@
   border: 2px solid rgb(234, 21, 21);
   border-radius: 5px;
   font-size: 200%;
+}
+
+.reactionTimeBox{
+  height: 5vh;
+  width: 99vw;
 }
 
 .instruction1Contain{
@@ -55,6 +109,7 @@
   font-size: 450%;
   color: green;
   font-weight: bold;
+  margin-top: 30px;
 }
 
 .piecesContainer{
@@ -119,3 +174,34 @@
 .color8{
   background-color: rgb(252, 0, 117);
 }
+
+.smaller{
+  font-size: 50%;
+}
+
+.headerCopy{
+  height: 10vh;
+  width: 99vw;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+#headerCopy > h1{
+  font-size: 550%;
+}
+
+.restart{
+  margin-top: 30px;
+}
+
+.infoCopy{
+  font-size: 300%;
+}
+
+.button{
+  height: 5vh;
+  width: 8vw;
+  border: 2px solid red;
+  font-weight: bold;
+}
+

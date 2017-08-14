@@ -8,27 +8,27 @@
   <script src="js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 
-<body class="centerContent">
+<body class="centerContent backgroundColor">
   <header class="header" id="header">
     <h1>Welcome to reflex &amp; reaction tester!</h1>
   </header>
   <section>
     <div class="instructions">
-      <p>The game is simple. All you have to do is click on as many correct boxes or circles as possible within your chosen time frame. Each time you get one correct you get a point, and for every time get one wrong you lose a point.</p>
-      <p>To advance to level two you need to score a minimum score of 25. To beat level two and win the game, you need to score a minimum of 50 and aseceret extra twist. Good luck and have some fun!</p>
+      <p class="copy">The game is simple. All you have to do is click on as many correct boxes or circles as possible within your chosen time frame. Each time you get one correct you get a point, and for every time get one wrong you lose a point. If you fail to click on anything within 5 seconds you lose a point</p>
+      <p class="copy">To advance to level two you need to score a minimum score of 25. To beat level two and win the game, you need to score a minimum of 50 points. Good luck and have some fun!</p>
     </div>
-    <form class="form">
-      <div>
-        <input type="radio" name="timeOption" class="oneMin" value="60">Begginer: 1 min game</input>
-        <input type="radio" name="timeOption" class="30Sec" value="30">Advanced: 30 sec game</input>
-      </div>
-      <div>
-        <input type="textarea" name="userName" class="userName" id="userName" placeholder="Player: Whats your name?"></input>
-      </div>
-    </form>
-    <div class="button1">
-      <a class="startButton" id="startButton">Start game!</a>
-    </div>
-  </section>
+    </section>
+      <form class="formContain">
+        <div>
+          <input type="radio" name="timeOption" class="radioButton" value="60">Begginer: 1 min game</input>
+          <input type="radio" name="timeOption" class="radioButton" value="30">Advanced: 30 sec game</input>
+        </div>
+        <div>
+          <input type="textarea" name="userName" class="userName" id="userName" placeholder="Player: Whats your name?"></input>
+        </div>
+        <div class="button1">
+          <button class="startButton1 button" id="startButton">Start game!</button>
+        </div>
+      </form>
 </body>
 </html>
