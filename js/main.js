@@ -15,6 +15,7 @@ let level1 = null;
 let level2 = null;
 let finalLevel1Score = localStorage.getItem("level1Score");
 let finalLevel2Score = localStorage.getItem("level2Score");
+let time = 0;
 
 $(document).ready(function(){
     console.log("up and running!");
@@ -29,7 +30,7 @@ $(document).ready(function(){
     //index page start button captures the data and passes it on
     $("#startButton").click(function() {
         let name = $("#userName").val();
-        let time = $("input[name='timeOption']:checked").val();
+        time = $("input[name='timeOption']:checked").val();
         if ((name.length > 1) && (time === "30" || time === "60")) {
           populateStorageIndex();
           window.open("level1.html");
@@ -51,7 +52,6 @@ $(document).ready(function(){
             $("#timeLeft").text("Time left:" + " " + countdown);
             countdown -= 1;
             fiveSecondsTimeOut +=1
-            console.log(fiveSecondsTimeOut);
             if(level1 === true){
               if(fiveSecondsTimeOut === 5){
                 fiveSecondsTimeOut = 0;
@@ -88,7 +88,6 @@ $(document).ready(function(){
         generateRandomShape();
         creater();
         timeOutForInstruction();
-
     });
 
     //button to officaly start level 2.
@@ -171,30 +170,6 @@ $(document).ready(function(){
       });
       arrayOfRandomNumbers = [];
     }
-
-    // //gives each div a random color
-    // function randomColor(){
-    //   setRandomInt();
-    //   let i = 0;
-    //   $(".shape").each(function(){
-    //     let theRandomNumber = arrayOfRandomNumbers[i]
-    //     $(this).css('background-color', color[theRandomNumber]);
-    //     i++
-    //   });
-    //   arrayOfRandomNumbers = [];
-    // }
-
-    // //gives each div a random shape
-    // function randomShape(){
-    //   setRandomInt();
-    //   let i = 0;
-    //   $(".shape").each(function(){
-    //     let theRandomNumber = arrayOfRandomNumbers[i]
-    //     $(this).css('border-radius', shape[theRandomNumber]);
-    //     i++
-    //   });
-    //   arrayOfRandomNumbers = [];
-    // }
 
     //gets a functional command
     function getInstructions(){
@@ -307,7 +282,7 @@ $(document).ready(function(){
 
     function populateStorageIndex() {
       localStorage.setItem("playerName", name);
-      localStorage.setItem("length", countdown);
+      localStorage.setItem("length", time);
     }
 
     function populateStorageLeve1 (){
